@@ -39,7 +39,12 @@ const User = ({ match }) => {
         <Fragment>
             <Link to='/' className='btn btn-light'>Back to Results</Link>
             Hireable:{' '}
-            {hireable ? (<i className='fas fa-check text-success' />) : (<i className='fas fa-times-circle text-danger' />)}
+
+            {/* Im not sure why the icons stopped working but i just replaced them with text */}
+            {/* {hireable ? (<i className='fas fa-check text-success' />) : (<i className='fas fa-times-circle text-danger' />)} */}
+
+            {hireable ? ('- Yeah') : ('- Nah')}
+
             <div className='card grid-2'>
                 <div className='all-center'>
                     <img
