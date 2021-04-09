@@ -13,36 +13,6 @@ import AlertState from "./context/alert/AlertState";
 
 const App = () => {
 
-  // state={
-  //   users:[],
-  //   user: {},
-  //   repos: [],
-  //   loading: false,
-  //   alert: null
-  // } 
-  // +++++replaced by below++++
-
-  // const [users, setUsers] = useState([]);
-  // const [user, setUser] = useState({});
-  // const [repos, setRepos] = useState([]);
-  // const [loading, setLoading] = useState(false);
-  // const [alert, setAlert] = useState(null);
-  
-  //++++++replaced by moving to GithubState++++++++
-
-  // replaced by moving to GithubState
-
-  // // Set Alert
-  // const showAlert = (msg, type) => {
-  //   // this.setState({alert: {msg: msg, type: type}})
-  //   // Same as below
-  //   // this.setState({alert: {msg, type}})
-  //
-    //  setAlert({ msg, type });
-
-  //   setTimeout(()=> setAlert(null), 4500);
-  // };
-
     return (
       <GithubState>
         <AlertState>
